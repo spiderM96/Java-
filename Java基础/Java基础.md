@@ -18,7 +18,7 @@
 2. JDK 和 JRE 中都包含 JVM ；
 3. JVM 是 java 编程语言的核心并且具有平台独立性。
 
-##二、数据类型
+## 二、数据类型
 
 八个基本类型：
 
@@ -47,7 +47,7 @@ Integer x = 2;     // 装箱
 int y = x;         // 拆箱
 ```
 
-###缓存池
+### 缓存池
 
 new Integer(123) 与 Integer.valueOf(123) 的区别在于：
 
@@ -125,7 +125,7 @@ System.out.println(m == n); // true
 
 在使用这些基本类型对应的包装类型时，就可以直接使用缓冲池中的对象。
 
-## 三、String 和 StringBuffer、StringBuilder 
+## 三、String 和 StringBuffer、StringBuilder
 
 **可变性** 　
 
@@ -160,9 +160,9 @@ String 中的对象是不可变的，也就可以理解为常量，线程安全�
 2. 单线程操作字符串缓冲区下操作大量数据 = StringBuilder
 3. 多线程操作字符串缓冲区下操作大量数据 = StringBuffer
 
-##四、运算
+## 四、运算
 
-###参数传递
+### 参数传递
 
 Java 的参数是以**值传递**的形式传入方法中，而不是引用传递。
 
@@ -226,7 +226,7 @@ class PassByValueExample {
 }
 ```
 
-###float 与 double
+### float 与 double
 
 Java 不能隐式执行向下转型，因为这会使得精度降低。
 
@@ -242,7 +242,7 @@ Java 不能隐式执行向下转型，因为这会使得精度降低。
 float f = 1.1f;
 ```
 
-###隐式类型转换
+### 隐式类型转换
 
 因为字面量 1 是 int 类型，它比 short 类型精度要高，因此不能隐式地将 int 类型下转型为 short 类型。
 
@@ -266,7 +266,7 @@ s1 = (short) (s1 + 1);
 
 [StackOverflow : Why don't Java's +=, -=, *=, /= compound assignment operators require casting?](https://stackoverflow.com/questions/8710619/why-dont-javas-compound-assignment-operators-require-casting)
 
-###switch
+### switch
 
 从 Java 7 开始，可以在 switch 条件判断语句中使用 String 对象。
 
@@ -298,9 +298,9 @@ switch 不支持 long，是因为 switch 的设计初衷是对那些只有少数
 
 [StackOverflow : Why can't your switch statement data type be long, Java?](https://stackoverflow.com/questions/2676210/why-cant-your-switch-statement-data-type-be-long-java)
 
-##五、继承
+## 五、继承
 
-###访问权限
+### 访问权限
 
 Java 中有三个访问权限修饰符：private、protected 以及 public，如果不加访问修饰符，表示包级可见。
 
@@ -361,7 +361,7 @@ public class AccessWithInnerClassExample {
 }
 ```
 
-###抽象类与接口
+### 抽象类与接口
 
 **1. 抽象类**
 
@@ -519,7 +519,7 @@ SuperExtendExample.func()
 
 [Using the Keyword super](https://docs.oracle.com/javase/tutorial/java/IandI/super.html)
 
-###重写与重载
+### 重写与重载
 
 **1. 重写（Override）**
 
@@ -538,9 +538,9 @@ SuperExtendExample.func()
 
 应该注意的是，返回值不同，其它都相同不算是重载。
 
-##六、Object 通用方法
+## 六、Object 通用方法
 
-###概览
+### 概览
 
 ```
 public native int hashCode()
@@ -566,7 +566,7 @@ public final void wait(long timeout, int nanos) throws InterruptedException
 public final void wait() throws InterruptedException
 ```
 
-###equals()
+### equals()
 
 **1. 等价关系**
 
